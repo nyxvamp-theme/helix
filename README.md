@@ -5,8 +5,16 @@ a minimalist theme collection, inspired by a blend of gothic and emo aesthetics 
 ## variations
 
 1. **veil**: versatile theme for both day and night, featuring bright accents on a dark background.
-2. **obsidian**: dark, monochromatic theme for focused nighttime coding sessions.
+
+<img src="./assets/nyxvamp-veil.png" />
+
+2. **obsidian**: dark theme for focused nighttime coding sessions.
+
+<img src="./assets/nyxvamp-obsidian.png" />
+
 3. **radiance**: light theme optimized for daylight use, ensuring excellent readability.
+
+<img src="./assets/nyxvamp-radiance.png" />
 
 ## usage
 
