@@ -1,0 +1,122 @@
+# TransVampire Theme for Helix
+# Author: Zoey Spessanha
+# License: MIT
+
+# UI Elements
+"ui.background"               = { bg = "background", fg = "foreground" }
+"ui.text"                     = { fg = "foreground" }
+"ui.cursor"                   = { fg = "cursor_fg", bg = "cursor_bg" }
+"ui.cursorline.primary"       = { bg = "cursorline" }
+"ui.selection"                = { bg = "selection" }
+"ui.linenr"                   = { fg = "line_nr" }
+"ui.linenr.selected"          = { fg = "line_nr_selected", modifiers = ["bold"] }
+"ui.statusline"               = { fg = "status_fg", bg = "status_bg" }
+"ui.statusline.inactive"      = { fg = "status_inactive_fg", bg = "status_inactive_bg" }
+"ui.menu"                     = { fg = "menu_fg", bg = "menu_bg" }
+"ui.menu.selected"            = { fg = "menu_sel_fg", bg = "menu_sel_bg" }
+"ui.menu.scroll"              = { fg = "menu_scroll_fg", bg = "menu_scroll_bg" }
+"ui.popup"                    = { fg = "popup_fg", bg = "popup_bg" }
+"ui.match_paren"              = { fg = "match_paren_fg", bg = "match_paren_bg", modifiers = ["bold"] }
+
+# Syntax Highlighting
+"comment"                     = { fg = "comment_fg", modifiers = ["italic"] }
+"string"                      = { fg = "string_fg" }
+"string.special"              = { fg = "string_special_fg" }
+"constant"                    = { fg = "constant_fg" }
+"constant.builtin"            = { fg = "constant_builtin_fg", modifiers = ["bold"] }
+"number"                      = { fg = "number_fg" }
+"boolean"                     = { fg = "boolean_fg" }
+"function"                    = { fg = "function_fg" }
+"function.builtin"            = { fg = "function_builtin_fg" }
+"keyword"                     = { fg = "keyword_fg", modifiers = ["bold"] }
+"keyword.control"             = { fg = "keyword_control_fg", modifiers = ["bold"] }
+"operator"                    = { fg = "operator_fg" }
+"variable"                    = { fg = "variable_fg" }
+"variable.builtin"            = { fg = "variable_builtin_fg", modifiers = ["italic"] }
+"type"                        = { fg = "type_fg", modifiers = ["italic"] }
+"type.builtin"                = { fg = "type_builtin_fg", modifiers = ["italic"] }
+"attribute"                   = { fg = "attribute_fg" }
+"namespace"                   = { fg = "namespace_fg" }
+"punctuation"                 = { fg = "punctuation_fg" }
+"symbol"                      = { fg = "symbol_fg", modifiers = ["italic"] }
+
+# Diagnostics
+"diagnostic.error"            = { fg = "error_fg", modifiers = ["bold"] }
+"diagnostic.warning"          = { fg = "warning_fg", modifiers = ["bold"] }
+"diagnostic.info"             = { fg = "info_fg", modifiers = ["bold"] }
+"diagnostic.hint"             = { fg = "hint_fg", modifiers = ["bold"] }
+
+# Diff
+"diff.plus"                   = { fg = "diff_add_fg" }
+"diff.minus"                  = { fg = "diff_delete_fg" }
+"diff.delta"                  = { fg = "diff_change_fg" }
+
+# Markup
+"markup.heading"              = { fg = "markup_heading_fg", modifiers = ["bold"] }
+"markup.bold"                 = { fg = "markup_bold_fg", modifiers = ["bold"] }
+"markup.italic"               = { fg = "markup_italic_fg", modifiers = ["italic"] }
+"markup.link.url"             = { fg = "markup_link_url_fg", modifiers = ["underline"] }
+"markup.link.text"            = { fg = "markup_link_text_fg" }
+"markup.quote"                = { fg = "markup_quote_fg", modifiers = ["italic"] }
+
+# Palette
+[palette]
+background                    = "#000A0F"  # Deep Navy
+foreground                    = "#F7F7FF"  # Off-White
+cursor_fg                     = "#000A0F"
+cursor_bg                     = "#9655FF"  # Vibrant Purple
+cursorline                    = "#0D1A26"  # Slightly lighter than background
+selection                     = "#1A2E3D"  # Darker blue-gray
+line_nr                       = "#3C4C5C"  # Medium gray-blue
+line_nr_selected              = "#FEF5BC"  # Soft Yellow
+status_fg                     = "#F7F7FF"
+status_bg                     = "#1A2E3D"
+status_inactive_fg            = "#3C4C5C"
+status_inactive_bg            = "#000A0F"
+menu_fg                       = "#F7F7FF"
+menu_bg                       = "#1A2E3D"
+menu_sel_fg                   = "#000A0F"
+menu_sel_bg                   = "#FEF5BC"
+menu_scroll_fg                = "#3C4C5C"
+menu_scroll_bg                = "#1A2E3D"
+popup_fg                      = "#F7F7FF"
+popup_bg                      = "#1A2E3D"
+match_paren_fg                = "#FEF5BC"
+match_paren_bg                = "#000A0F"
+
+comment_fg                    = "#3C4C5C"  # Muted gray-blue for comments
+string_fg                     = "#FEF5BC"  # Soft Yellow for strings
+string_special_fg             = "#FEF5BC"
+constant_fg                   = "#9655FF"  # Vibrant Purple for constants
+constant_builtin_fg           = "#9655FF"
+number_fg                     = "#FEF5BC"  # Soft Yellow for numbers
+boolean_fg                    = "#9655FF"  # Vibrant Purple for booleans
+function_fg                   = "#F7F7FF"  # Off-White for functions
+function_builtin_fg           = "#F7F7FF"
+keyword_fg                    = "#9655FF"  # Vibrant Purple for keywords
+keyword_control_fg            = "#9655FF"
+operator_fg                   = "#F7F7FF"  # Off-White for operators
+variable_fg                   = "#F7F7FF"
+variable_builtin_fg           = "#9655FF"
+type_fg                       = "#FEF5BC"  # Soft Yellow for types
+type_builtin_fg               = "#FEF5BC"
+attribute_fg                  = "#9655FF"
+namespace_fg                  = "#9655FF"
+punctuation_fg                = "#F7F7FF"
+symbol_fg                     = "#9655FF"
+
+error_fg                      = "#FF5E5E"  # Bright Red for errors
+warning_fg                    = "#FFAC4B"  # Orange for warnings
+info_fg                       = "#5EA7FF"  # Blue for info
+hint_fg                       = "#5EFFA0"  # Green for hints
+
+diff_add_fg                   = "#5EFFA0"  # Green for additions
+diff_delete_fg                = "#FF5E5E"  # Red for deletions
+diff_change_fg                = "#FFAC4B"  # Orange for changes
+
+markup_heading_fg             = "#9655FF"  # Vibrant Purple for headings
+markup_bold_fg                = "#F7F7FF"  # Off-White for bold text
+markup_italic_fg              = "#F7F7FF"  # Off-White for italic text
+markup_link_url_fg            = "#5EA7FF"  # Blue for URLs
+markup_link_text_fg           = "#9655FF"  # Vibrant Purple for link text
+markup_quote_fg               = "#3C4C5C"  # Muted gray-blue for quotes

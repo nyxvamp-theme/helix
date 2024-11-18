@@ -1,0 +1,122 @@
+# TransVampire Theme for Helix (Daylight Enhanced)
+# Author: Zoey Spessanha
+# License: MIT
+
+# UI Elements
+"ui.background"               = { bg = "background", fg = "foreground" }
+"ui.text"                     = { fg = "foreground" }
+"ui.cursor"                   = { fg = "cursor_fg", bg = "cursor_bg" }
+"ui.cursorline.primary"       = { bg = "cursorline" }
+"ui.selection"                = { bg = "selection" }
+"ui.linenr"                   = { fg = "line_nr" }
+"ui.linenr.selected"          = { fg = "line_nr_selected", modifiers = ["bold"] }
+"ui.statusline"               = { fg = "status_fg", bg = "status_bg" }
+"ui.statusline.inactive"      = { fg = "status_inactive_fg", bg = "status_inactive_bg" }
+"ui.menu"                     = { fg = "menu_fg", bg = "menu_bg" }
+"ui.menu.selected"            = { fg = "menu_sel_fg", bg = "menu_sel_bg" }
+"ui.menu.scroll"              = { fg = "menu_scroll_fg", bg = "menu_scroll_bg" }
+"ui.popup"                    = { fg = "popup_fg", bg = "popup_bg" }
+"ui.match_paren"              = { fg = "match_paren_fg", bg = "match_paren_bg", modifiers = ["bold"] }
+
+# Syntax Highlighting
+"comment"                     = { fg = "comment_fg", modifiers = ["italic"] }
+"string"                      = { fg = "string_fg" }
+"string.special"              = { fg = "string_special_fg" }
+"constant"                    = { fg = "constant_fg" }
+"constant.builtin"            = { fg = "constant_builtin_fg", modifiers = ["bold"] }
+"number"                      = { fg = "number_fg" }
+"boolean"                     = { fg = "boolean_fg" }
+"function"                    = { fg = "function_fg" }
+"function.builtin"            = { fg = "function_builtin_fg" }
+"keyword"                     = { fg = "keyword_fg", modifiers = ["bold"] }
+"keyword.control"             = { fg = "keyword_control_fg", modifiers = ["bold"] }
+"operator"                    = { fg = "operator_fg" }
+"variable"                    = { fg = "variable_fg" }
+"variable.builtin"            = { fg = "variable_builtin_fg", modifiers = ["italic"] }
+"type"                        = { fg = "type_fg", modifiers = ["italic"] }
+"type.builtin"                = { fg = "type_builtin_fg", modifiers = ["italic"] }
+"attribute"                   = { fg = "attribute_fg" }
+"namespace"                   = { fg = "namespace_fg" }
+"punctuation"                 = { fg = "punctuation_fg" }
+"symbol"                      = { fg = "symbol_fg", modifiers = ["italic"] }
+
+# Diagnostics
+"diagnostic.error"            = { fg = "error_fg", modifiers = ["bold"] }
+"diagnostic.warning"          = { fg = "warning_fg", modifiers = ["bold"] }
+"diagnostic.info"             = { fg = "info_fg", modifiers = ["bold"] }
+"diagnostic.hint"             = { fg = "hint_fg", modifiers = ["bold"] }
+
+# Diff
+"diff.plus"                   = { fg = "diff_add_fg" }
+"diff.minus"                  = { fg = "diff_delete_fg" }
+"diff.delta"                  = { fg = "diff_change_fg" }
+
+# Markup
+"markup.heading"              = { fg = "markup_heading_fg", modifiers = ["bold"] }
+"markup.bold"                 = { fg = "markup_bold_fg", modifiers = ["bold"] }
+"markup.italic"               = { fg = "markup_italic_fg", modifiers = ["italic"] }
+"markup.link.url"             = { fg = "markup_link_url_fg", modifiers = ["underline"] }
+"markup.link.text"            = { fg = "markup_link_text_fg" }
+"markup.quote"                = { fg = "markup_quote_fg", modifiers = ["italic"] }
+
+# Palette
+[palette]
+background                    = "#121826"  # Lighter than deep navy for better contrast
+foreground                    = "#F0F0FF"  # Slightly brighter off-white
+cursor_fg                     = "#121826"
+cursor_bg                     = "#9655FF"  # Vibrant Purple
+cursorline                    = "#1F2A3A"  # Slightly lighter than background
+selection                     = "#2A3A50"  # Lighter blue-gray for selection
+line_nr                       = "#5A6A7A"  # Brighter gray-blue for line numbers
+line_nr_selected              = "#FEF5BC"  # Soft Yellow for selected line number
+status_fg                     = "#F0F0FF"
+status_bg                     = "#2A3A50"
+status_inactive_fg            = "#5A6A7A"
+status_inactive_bg            = "#121826"
+menu_fg                       = "#F0F0FF"
+menu_bg                       = "#2A3A50"
+menu_sel_fg                   = "#121826"
+menu_sel_bg                   = "#FEF5BC"
+menu_scroll_fg                = "#5A6A7A"
+menu_scroll_bg                = "#2A3A50"
+popup_fg                      = "#F0F0FF"
+popup_bg                      = "#2A3A50"
+match_paren_fg                = "#FEF5BC"
+match_paren_bg                = "#121826"
+
+comment_fg                    = "#5A6A7A"  # Brighter for better visibility
+string_fg                     = "#FFE48B"  # Brighter Soft Yellow
+string_special_fg             = "#FFE48B"
+constant_fg                   = "#B380FF"  # Slightly lighter purple
+constant_builtin_fg           = "#B380FF"
+number_fg                     = "#FFE48B"
+boolean_fg                    = "#B380FF"
+function_fg                   = "#F0F0FF"
+function_builtin_fg           = "#F0F0FF"
+keyword_fg                    = "#B380FF"
+keyword_control_fg            = "#B380FF"
+operator_fg                   = "#F0F0FF"
+variable_fg                   = "#F0F0FF"
+variable_builtin_fg           = "#B380FF"
+type_fg                       = "#FFE48B"
+type_builtin_fg               = "#FFE48B"
+attribute_fg                  = "#B380FF"
+namespace_fg                  = "#B380FF"
+punctuation_fg                = "#F0F0FF"
+symbol_fg                     = "#B380FF"
+
+error_fg                      = "#FF6E6E"  # Brighter Red
+warning_fg                    = "#FFB85E"  # Brighter Orange
+info_fg                       = "#6EB7FF"  # Brighter Blue
+hint_fg                       = "#6EFFB0"  # Brighter Green
+
+diff_add_fg                   = "#6EFFB0"
+diff_delete_fg                = "#FF6E6E"
+diff_change_fg                = "#FFB85E"
+
+markup_heading_fg             = "#B380FF"
+markup_bold_fg                = "#F0F0FF"
+markup_italic_fg              = "#F0F0FF"
+markup_link_url_fg            = "#6EB7FF"
+markup_link_text_fg           = "#B380FF"
+markup_quote_fg               = "#5A6A7A"
