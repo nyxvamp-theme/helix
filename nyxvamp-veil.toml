@@ -1,6 +1,5 @@
-# TransVamp Theme for Helix
-# Author: Zoey Spessanha
-# License: MIT
+# nyxvamp: veil variant
+# author: zoedsoupe <zoey.spessanha@zeetech.io>
 
 # UI Elements
 "ui.background"               = { bg = "background", fg = "foreground" }

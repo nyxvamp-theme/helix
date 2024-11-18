@@ -1,6 +1,5 @@
-# TransVampire Theme for Helix
-# Author: Zoey Spessanha
-# License: MIT
+# nyxvamp - obsidian variant
+# author: zoedsoupe <zoey.spessanha@zeetech.io>
 
 # UI Elements
 "ui.background"               = { bg = "background", fg = "foreground" }
@@ -61,62 +60,62 @@
 
 # Palette
 [palette]
-background                    = "#000A0F"  # Deep Navy
-foreground                    = "#F7F7FF"  # Off-White
-cursor_fg                     = "#000A0F"
-cursor_bg                     = "#9655FF"  # Vibrant Purple
-cursorline                    = "#0D1A26"  # Slightly lighter than background
-selection                     = "#1A2E3D"  # Darker blue-gray
-line_nr                       = "#3C4C5C"  # Medium gray-blue
-line_nr_selected              = "#FEF5BC"  # Soft Yellow
-status_fg                     = "#F7F7FF"
-status_bg                     = "#1A2E3D"
-status_inactive_fg            = "#3C4C5C"
-status_inactive_bg            = "#000A0F"
-menu_fg                       = "#F7F7FF"
-menu_bg                       = "#1A2E3D"
-menu_sel_fg                   = "#000A0F"
-menu_sel_bg                   = "#FEF5BC"
-menu_scroll_fg                = "#3C4C5C"
-menu_scroll_bg                = "#1A2E3D"
-popup_fg                      = "#F7F7FF"
-popup_bg                      = "#1A2E3D"
-match_paren_fg                = "#FEF5BC"
-match_paren_bg                = "#000A0F"
+background                    = "#000A0F"  # Very dark background
+foreground                    = "#C0C0CE"  # Slightly muted foreground
+cursor_fg                     = "#0E0E10"
+cursor_bg                     = "#F28FAD"  # Pink cursor
+cursorline                    = "#1E1E20"  # Slightly lighter background
+selection                     = "#2E2E30"  # Dark gray selection
+line_nr                       = "#5E5A76"  # Dark gray line numbers
+line_nr_selected              = "#C0C0CE"  # Foreground color for selected line number
+status_fg                     = "#C0C0CE"
+status_bg                     = "#1E1E20"
+status_inactive_fg            = "#5E5A76"
+status_inactive_bg            = "#0E0E10"
+menu_fg                       = "#C0C0CE"
+menu_bg                       = "#0E0E10"
+menu_sel_fg                   = "#0E0E10"
+menu_sel_bg                   = "#F28FAD"
+menu_scroll_fg                = "#5E5A76"
+menu_scroll_bg                = "#0E0E10"
+popup_fg                      = "#C0C0CE"
+popup_bg                      = "#0E0E10"
+match_paren_fg                = "#F28FAD"
+match_paren_bg                = "#0E0E10"
 
-comment_fg                    = "#3C4C5C"  # Muted gray-blue for comments
-string_fg                     = "#FEF5BC"  # Soft Yellow for strings
-string_special_fg             = "#FEF5BC"
-constant_fg                   = "#9655FF"  # Vibrant Purple for constants
-constant_builtin_fg           = "#9655FF"
-number_fg                     = "#FEF5BC"  # Soft Yellow for numbers
-boolean_fg                    = "#9655FF"  # Vibrant Purple for booleans
-function_fg                   = "#F7F7FF"  # Off-White for functions
-function_builtin_fg           = "#F7F7FF"
-keyword_fg                    = "#9655FF"  # Vibrant Purple for keywords
-keyword_control_fg            = "#9655FF"
-operator_fg                   = "#F7F7FF"  # Off-White for operators
-variable_fg                   = "#F7F7FF"
-variable_builtin_fg           = "#9655FF"
-type_fg                       = "#FEF5BC"  # Soft Yellow for types
-type_builtin_fg               = "#FEF5BC"
-attribute_fg                  = "#9655FF"
-namespace_fg                  = "#9655FF"
-punctuation_fg                = "#F7F7FF"
-symbol_fg                     = "#9655FF"
+comment_fg                    = "#5E5A76"  # Dark gray comments
+string_fg                     = "#8FBF8F"  # Muted green strings
+string_special_fg             = "#F28FAD"  # Pink special strings
+constant_fg                   = "#F28FAD"  # Pink constants
+constant_builtin_fg           = "#F28FAD"
+number_fg                     = "#D8A080"  # Muted peach numbers
+boolean_fg                    = "#F28FAD"
+function_fg                   = "#7FAFD7"  # Muted blue functions
+function_builtin_fg           = "#7FAFD7"
+keyword_fg                    = "#F5C2E7"  # Pink keywords
+keyword_control_fg            = "#F5C2E7"
+operator_fg                   = "#C0C0CE"  # Foreground color for operators
+variable_fg                   = "#C0C0CE"
+variable_builtin_fg           = "#F28FAD"
+type_fg                       = "#A0A0D0"  # Muted lavender types
+type_builtin_fg               = "#A0A0D0"
+attribute_fg                  = "#F5C2E7"
+namespace_fg                  = "#A090C0"  # Muted purple namespaces
+punctuation_fg                = "#C0C0CE"
+symbol_fg                     = "#F28FAD"
 
-error_fg                      = "#FF5E5E"  # Bright Red for errors
-warning_fg                    = "#FFAC4B"  # Orange for warnings
-info_fg                       = "#5EA7FF"  # Blue for info
-hint_fg                       = "#5EFFA0"  # Green for hints
+error_fg                      = "#D78284"  # Muted red errors
+warning_fg                    = "#D5B880"  # Muted yellow warnings
+info_fg                       = "#7A9CCC"  # Muted blue info
+hint_fg                       = "#7BB5A8"  # Muted cyan hints
 
-diff_add_fg                   = "#5EFFA0"  # Green for additions
-diff_delete_fg                = "#FF5E5E"  # Red for deletions
-diff_change_fg                = "#FFAC4B"  # Orange for changes
+diff_add_fg                   = "#86BA75"  # Muted green additions
+diff_delete_fg                = "#D78284"  # Muted red deletions
+diff_change_fg                = "#D5B880"  # Muted yellow changes
 
-markup_heading_fg             = "#9655FF"  # Vibrant Purple for headings
-markup_bold_fg                = "#F7F7FF"  # Off-White for bold text
-markup_italic_fg              = "#F7F7FF"  # Off-White for italic text
-markup_link_url_fg            = "#5EA7FF"  # Blue for URLs
-markup_link_text_fg           = "#9655FF"  # Vibrant Purple for link text
-markup_quote_fg               = "#3C4C5C"  # Muted gray-blue for quotes
+markup_heading_fg             = "#F5C2E7"
+markup_bold_fg                = "#F5C2E7"
+markup_italic_fg              = "#F5C2E7"
+markup_link_url_fg            = "#7FAFD7"
+markup_link_text_fg           = "#F5C2E7"
+markup_quote_fg               = "#5E5A76"
