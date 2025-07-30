@@ -1,0 +1,15 @@
+# nyxvamp: override variant (fully transparent)
+# author: zoedsoupe <zoey.spessanha@zeetech.io>
+
+inherits = "nyxvamp-veil"
+
+# Override UI elements to remove backgrounds
+"ui.background" = {}
+"ui.statusline" = { fg = "status_fg" }
+"ui.statusline.inactive" = { fg = "status_inactive_fg" }
+"ui.menu" = { fg = "menu_fg" }
+"ui.popup" = { fg = "popup_fg" }
+"ui.cursorline.primary" = {}
+"ui.virtual.ruler" = {}
+"ui.match_paren" = { fg = "match_paren_fg", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "menu_scroll_fg" }
