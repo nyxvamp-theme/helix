@@ -1,6 +1,9 @@
 # nyxvamp - radiance variant
 # author: <zoey.spessanha@zeetech.io>
 
+# Rainbow parentheses colors
+rainbow = ["keyword_fg", "function_fg", "constant_fg", "string_fg"]
+
 # UI Elements
 "ui.background"               = { bg = "background", fg = "foreground" }
 "ui.text"                     = { fg = "foreground" }

@@ -3,6 +3,9 @@
 
 inherits = "nyxvamp-radiance"
 
+# Rainbow parentheses colors
+rainbow = ["keyword_fg", "function_fg", "string_fg", "number_fg"]
+
 # Override specific styles for veil variant
 "function" = { fg = "function_fg", modifiers = ["bold"] }
 "function.builtin" = { fg = "function_builtin_fg", modifiers = ["bold"] }
