@@ -10,17 +10,24 @@ inherits = "nyxvamp-veil"
 "ui.cursorline.primary" = {}
 "ui.virtual.ruler" = {}
 
-# Picker/selector elements - add subtle backgrounds for readability
-"ui.menu" = { fg = "menu_fg", bg = "picker_bg" }
-"ui.menu.selected" = { fg = "picker_sel_fg", bg = "picker_sel_bg", modifiers = ["bold"] }
-"ui.menu.scroll" = { fg = "menu_scroll_fg", bg = "picker_scroll_bg" }
-"ui.popup" = { fg = "popup_fg", bg = "picker_bg" }
-"ui.popup.info" = { fg = "popup_fg", bg = "picker_bg" }
-"ui.picker.header" = { fg = "picker_header_fg", bg = "picker_header_bg", modifiers = ["bold"] }
-"ui.picker.header.column" = { fg = "picker_header_fg", bg = "picker_header_bg" }
-"ui.picker.header.column.active" = { fg = "picker_sel_fg", bg = "picker_sel_bg", modifiers = ["bold"] }
-"ui.text.focus" = { fg = "picker_sel_fg", bg = "picker_sel_bg", modifiers = ["bold"] }
+# Keep menus fully transparent but improve text contrast
+"ui.menu" = { fg = "bright_text" }
+"ui.menu.selected" = { fg = "selected_bright", bg = "selection_subtle", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "menu_scroll_fg" }
+
+# Popups remain transparent with better text
+"ui.popup" = { fg = "bright_text" }
+"ui.popup.info" = { fg = "bright_text" }
+
+# Improve picker visibility while keeping transparency
+"ui.picker.header" = { fg = "header_bright", modifiers = ["bold", "underlined"] }
+"ui.picker.header.column" = { fg = "header_bright" }
+"ui.picker.header.column.active" = { fg = "selected_bright", modifiers = ["bold", "underlined"] }
+
+# Focus and selection improvements
+"ui.text.focus" = { fg = "selected_bright", bg = "selection_subtle", modifiers = ["bold"] }
 "ui.text.inactive" = { fg = "text_inactive_fg" }
+"ui.text.directory" = { fg = "directory_fg", modifiers = ["italic"] }
 
 # Improve other UI elements
 "ui.match_paren" = { fg = "match_paren_fg", bg = "match_paren_highlight_bg", modifiers = ["bold"] }
@@ -29,16 +36,15 @@ inherits = "nyxvamp-veil"
 
 # Add palette for transparent-specific colors
 [palette]
-# Subtle semi-transparent backgrounds for pickers
-picker_bg = "#1E1E2E80"  # 50% transparent dark background
-picker_sel_bg = "#F5C2E740"  # 25% transparent pink selection
-picker_sel_fg = "#1E1E2E"  # Dark text on light selection
-picker_header_bg = "#302D4160"  # 37.5% transparent header
-picker_header_fg = "#D9E0EE"
-picker_scroll_bg = "#1E1E2E40"  # 25% transparent scroll track
+# High-contrast text colors for transparent backgrounds
+bright_text = "#D9E0EE"  # Bright white text
+selected_bright = "#F28FAD"  # Bright pink for selections
+header_bright = "#96CDFB"  # Bright blue for headers
+directory_fg = "#ABE9B3"  # Green for directories
 text_inactive_fg = "#6E6A86"  # Dimmed text
 
-# Improved highlight backgrounds
+# Very subtle selection backgrounds (minimal opacity)
+selection_subtle = "#F5C2E715"  # 8% transparent pink selection
 match_paren_highlight_bg = "#F28FAD20"  # 12.5% transparent pink highlight
-selection_transparent = "#494D6460"  # 37.5% transparent selection
-selection_primary_transparent = "#494D6480"  # 50% transparent primary selection
+selection_transparent = "#494D6425"  # 15% transparent selection
+selection_primary_transparent = "#494D6435"  # 20% transparent primary selection
