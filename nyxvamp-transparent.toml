@@ -36,15 +36,15 @@ inherits = "nyxvamp-veil"
 
 # Add palette for transparent-specific colors
 [palette]
-# Maximum contrast text colors for transparent backgrounds
-bright_text = "#FFFFFF"  # Pure white text for maximum readability
-selected_bright = "#FF69B4"  # Bright magenta pink for selections
-header_bright = "#00BFFF"  # Bright sky blue for headers
-directory_fg = "#00FF7F"  # Bright spring green for directories
-text_inactive_fg = "#9CA3AF"  # Light gray for inactive text
+# Darker muted colors for transparent backgrounds - better contrast without being harsh
+bright_text = "#E6E6FA"  # Slightly brighter lavender for readability
+selected_bright = "#DDA0DD"  # Muted plum - darker than original pink but still visible
+header_bright = "#87CEEB"  # Muted sky blue - darker than original
+directory_fg = "#98D982"  # Muted sage green - darker than original
+text_inactive_fg = "#696969"  # Darker gray for better hierarchy
 
-# Stronger selection backgrounds for visibility
-selection_subtle = "#F5C2E750"  # 31% transparent pink selection - much more visible
-match_paren_highlight_bg = "#F28FAD40"  # 25% transparent pink highlight
-selection_transparent = "#494D6450"  # 31% transparent selection
-selection_primary_transparent = "#494D6460"  # 37.5% transparent primary selection
+# Stronger selection backgrounds for transparent theme
+selection_subtle = "#DDA0DD50"  # 31% muted plum selection
+match_paren_highlight_bg = "#DDA0DD40"  # 25% muted plum highlight
+selection_transparent = "#483D8B40"  # 25% dark slate blue selection
+selection_primary_transparent = "#483D8B50"  # 31% dark slate blue primary
