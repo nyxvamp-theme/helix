@@ -3,13 +3,42 @@
 
 inherits = "nyxvamp-veil"
 
-# Override UI elements to remove backgrounds
+# Override UI elements for transparency while maintaining readability
 "ui.background" = {}
 "ui.statusline" = { fg = "status_fg" }
 "ui.statusline.inactive" = { fg = "status_inactive_fg" }
-"ui.menu" = { fg = "menu_fg" }
-"ui.popup" = { fg = "popup_fg" }
 "ui.cursorline.primary" = {}
 "ui.virtual.ruler" = {}
-"ui.match_paren" = { fg = "match_paren_fg", modifiers = ["bold"] }
-"ui.menu.scroll" = { fg = "menu_scroll_fg" }
+
+# Picker/selector elements - add subtle backgrounds for readability
+"ui.menu" = { fg = "menu_fg", bg = "picker_bg" }
+"ui.menu.selected" = { fg = "picker_sel_fg", bg = "picker_sel_bg", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "menu_scroll_fg", bg = "picker_scroll_bg" }
+"ui.popup" = { fg = "popup_fg", bg = "picker_bg" }
+"ui.popup.info" = { fg = "popup_fg", bg = "picker_bg" }
+"ui.picker.header" = { fg = "picker_header_fg", bg = "picker_header_bg", modifiers = ["bold"] }
+"ui.picker.header.column" = { fg = "picker_header_fg", bg = "picker_header_bg" }
+"ui.picker.header.column.active" = { fg = "picker_sel_fg", bg = "picker_sel_bg", modifiers = ["bold"] }
+"ui.text.focus" = { fg = "picker_sel_fg", bg = "picker_sel_bg", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "text_inactive_fg" }
+
+# Improve other UI elements
+"ui.match_paren" = { fg = "match_paren_fg", bg = "match_paren_highlight_bg", modifiers = ["bold"] }
+"ui.selection" = { bg = "selection_transparent" }
+"ui.selection.primary" = { bg = "selection_primary_transparent" }
+
+# Add palette for transparent-specific colors
+[palette]
+# Subtle semi-transparent backgrounds for pickers
+picker_bg = "#1E1E2E80"  # 50% transparent dark background
+picker_sel_bg = "#F5C2E740"  # 25% transparent pink selection
+picker_sel_fg = "#1E1E2E"  # Dark text on light selection
+picker_header_bg = "#302D4160"  # 37.5% transparent header
+picker_header_fg = "#D9E0EE"
+picker_scroll_bg = "#1E1E2E40"  # 25% transparent scroll track
+text_inactive_fg = "#6E6A86"  # Dimmed text
+
+# Improved highlight backgrounds
+match_paren_highlight_bg = "#F28FAD20"  # 12.5% transparent pink highlight
+selection_transparent = "#494D6460"  # 37.5% transparent selection
+selection_primary_transparent = "#494D6480"  # 50% transparent primary selection
