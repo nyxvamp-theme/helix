@@ -62,7 +62,7 @@ variable_builtin_fg = "#F28FAD"
 type_fg = "#A0A0D0"  # Muted lavender types
 type_builtin_fg = "#A0A0D0"
 attribute_fg = "#F5C2E7"
-namespace_fg = "#F5C2E7"  # Pink namespaces (Base16 base0D)
+namespace_fg = "#A0A0D0"  # Muted lavender namespaces (Base16 base0E)
 punctuation_fg = "#C0C0CE"
 symbol_fg = "#F28FAD"
 

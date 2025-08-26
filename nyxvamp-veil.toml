@@ -62,7 +62,7 @@ variable_builtin_fg = "#F28FAD"  # Pink built-in variables
 type_fg = "#C9CBFF"  # Lavender types
 type_builtin_fg = "#C9CBFF"  # Lavender built-in types
 attribute_fg = "#F5C2E7"  # Pink attributes
-namespace_fg = "#F5C2E7"  # Pink namespaces (Base16 base0D)
+namespace_fg = "#C9CBFF"  # Lavender namespaces (Base16 base0E)
 punctuation_fg = "#D9E0EE"  # Foreground color for punctuation
 symbol_fg = "#F28FAD"  # Pink symbols (e.g., Elixir atoms)
 

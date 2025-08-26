@@ -123,7 +123,7 @@ variable_builtin_fg           = "#9F1239"  # Even darker pink built-in variables
 type_fg                       = "#6B46C1"  # Darker purple types for better contrast
 type_builtin_fg               = "#6B46C1"  # Darker purple built-in types for better contrast
 attribute_fg                  = "#9655FF"  # Deep purple attributes
-namespace_fg                  = "#9655FF"  # Deep purple namespaces
+namespace_fg                  = "#6B46C1"  # Darker purple namespaces (Base16 base0E)
 punctuation_fg                = "#1E1E2E"  # Deep navy punctuation
 symbol_fg                     = "#9F1239"  # Even darker pink symbols (atoms) for maximum contrast
 
