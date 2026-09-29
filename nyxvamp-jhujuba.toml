@@ -1,0 +1,87 @@
+# nyxvamp: jhujuba variant
+# pink-tinted mid-dark theme, sweeter than veil
+# author: zoedsoupe <zoey.spessanha@zeetech.io>
+
+inherits = "nyxvamp-radiance"
+
+# Rainbow parentheses colors
+rainbow = ["keyword_fg", "function_fg", "string_fg", "constant_fg"]
+
+# Override specific styles for jhujuba variant
+"function" = { fg = "function_fg", modifiers = ["bold"] }
+"function.builtin" = { fg = "function_builtin_fg", modifiers = ["bold"] }
+"ui.match_paren" = { fg = "match_paren_fg", bg = "match_paren_bg", modifiers = ["bold"] }
+
+# Palette overrides
+[palette]
+# Pink-tinted mid-dark colors
+background = "#392735"  # Mid-dark plum background
+foreground = "#EDD7E4"  # Soft pink-white foreground
+cursor_fg = "#392735"
+cursor_bg = "#EEA2D4"  # Bubblegum pink cursor
+cursorline = "#493644"  # Lighter plum
+selection = "#64485E"  # Muted plum selection
+line_nr = "#8A6E86"  # Dim mauve line numbers
+line_nr_selected = "#EDD7E4"
+
+# Status line colors
+status_fg = "#EDD7E4"
+status_bg = "#493644"
+status_inactive_fg = "#8A6E86"
+status_inactive_bg = "#392735"
+
+# Menu colors
+menu_fg = "#EDD7E4"
+menu_bg = "#392735"
+menu_sel_fg = "#EDD7E4"
+menu_sel_bg = "#64485E"
+menu_scroll_fg = "#8A6E86"
+menu_scroll_bg = "#392735"
+popup_fg = "#EDD7E4"
+popup_bg = "#392735"
+
+# UI virtual
+virtual_ruler_bg = "#43303F"  # Between background and cursorline
+
+# Syntax highlighting
+match_paren_fg = "#F2798F"
+match_paren_bg = "#392735"
+comment_fg = "#AB8EA7"  # Mauve comments (cr 4.72)
+string_fg = "#A1E0AD"  # Soft green strings
+string_special_fg = "#F2798F"  # Hot pink special strings
+constant_fg = "#FDA293"  # Coral constants
+constant_builtin_fg = "#FDA293"
+number_fg = "#F7BD8F"  # Peach numbers
+boolean_fg = "#FDA293"
+function_fg = "#91C3F6"  # Sky blue functions
+function_builtin_fg = "#91C3F6"
+keyword_fg = "#EEA2D4"  # Bubblegum pink keywords
+keyword_control_fg = "#EEA2D4"
+operator_fg = "#EDD7E4"
+variable_fg = "#EDD7E4"
+variable_builtin_fg = "#F2798F"
+type_fg = "#C9C3F9"  # Lavender types
+type_builtin_fg = "#C9C3F9"
+attribute_fg = "#EEA2D4"
+namespace_fg = "#C9C3F9"
+punctuation_fg = "#EDD7E4"
+symbol_fg = "#FDA293"  # Coral symbols (e.g., Elixir atoms)
+
+# Diagnostics
+error_fg = "#F2798F"  # Hot pink errors
+warning_fg = "#F7BD8F"  # Peach warnings
+info_fg = "#91C3F6"  # Sky blue info
+hint_fg = "#83CEC8"  # Soft cyan hints
+
+# Diff colors
+diff_add_fg = "#92D094"  # Green additions
+diff_delete_fg = "#E17D7E"  # Red deletions
+diff_change_fg = "#E3C78E"  # Yellow changes
+
+# Markup colors
+markup_heading_fg = "#EEA2D4"
+markup_bold_fg = "#EEA2D4"
+markup_italic_fg = "#EEA2D4"
+markup_link_url_fg = "#91C3F6"
+markup_link_text_fg = "#EEA2D4"
+markup_quote_fg = "#AB8EA7"

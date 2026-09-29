@@ -1,6 +1,6 @@
 # nyxvamp (helix)
 
-a minimalist theme collection, inspired by a blend of gothic and emo aesthetics with transfem symbolism. it combines deep purples and soft yellows with neutral tones to create strong contrasts and a comfortable coding environment that reflects individuality.
+a minimalist theme collection, inspired by a blend of gothic and emo aesthetics with transfem symbolism. it combines deep purples and soft pinks with neutral tones to create strong contrasts and a comfortable coding environment that reflects individuality.
 
 ## variations
 
@@ -16,19 +16,25 @@ a minimalist theme collection, inspired by a blend of gothic and emo aesthetics 
 
 <img src="./assets/nyxvamp-radiance.png" />
 
+4. **jhujuba**: pink-tinted mid-dark theme, sweeter than veil.
+
+5. **transparent**: override variant on top of veil, fully transparent background for compositors and terminal transparency.
+
 ## usage
 
 1. downloads files
- - `nyxvamp-eclipse.toml`
- - `nyxvamp-midnight.toml`
- - `nyxvamp-dawn.toml`
+ - `nyxvamp-veil.toml`
+ - `nyxvamp-obsidian.toml`
+ - `nyxvamp-radiance.toml`
+ - `nyxvamp-jhujuba.toml`
+ - `nyxvamp-transparent.toml`
 2. place into the helix themes directory
  - unix: `~/.config/helix/themes/`
  - windows: `%AppData%\helix\themes\` - you dare it?
 3. issue the theme
  - open helix
  - start the cmd palette
- - type `nixvamp-${variant}` where `${variant}` is one of veil, obsidian or radiance
+ - type `nyxvamp-${variant}` where `${variant}` is one of veil, obsidian, radiance, jhujuba or transparent
 
 ## contribution
 
