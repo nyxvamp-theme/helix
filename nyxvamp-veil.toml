@@ -45,13 +45,13 @@ virtual_ruler_bg = "#2A2A3C"  # Slightly lighter than background, close to comme
 # Syntax highlighting
 match_paren_fg = "#F28FAD"
 match_paren_bg = "#1E1E2E"
-comment_fg = "#6E6A86"  # Gray comments
+comment_fg = "#8C88A6"  # Gray comments (cr 4.83, was 3.18)
 string_fg = "#ABE9B3"  # Green strings
 string_special_fg = "#F28FAD"  # Pink special strings
-constant_fg = "#F28FAD"  # Pink constants
-constant_builtin_fg = "#F28FAD"  # Pink built-in constants
+constant_fg = "#E1C487"  # Gold constants (was pink, collided with keyword/error hue)
+constant_builtin_fg = "#E1C487"  # Gold built-in constants
 number_fg = "#F8BD96"  # Peach numbers
-boolean_fg = "#F28FAD"  # Pink booleans
+boolean_fg = "#E1C487"  # Gold booleans
 function_fg = "#96CDFB"  # Blue functions
 function_builtin_fg = "#96CDFB"  # Blue built-in functions
 keyword_fg = "#F5C2E7"  # Pink keywords
@@ -64,7 +64,7 @@ type_builtin_fg = "#C9CBFF"  # Lavender built-in types
 attribute_fg = "#F5C2E7"  # Pink attributes
 namespace_fg = "#C9CBFF"  # Lavender namespaces (Base16 base0E)
 punctuation_fg = "#D9E0EE"  # Foreground color for punctuation
-symbol_fg = "#F28FAD"  # Pink symbols (e.g., Elixir atoms)
+symbol_fg = "#E1C487"  # Gold symbols (e.g., Elixir atoms)
 
 # Diagnostics
 error_fg = "#F28FAD"  # Base16 base08 - red errors
@@ -83,4 +83,4 @@ markup_bold_fg = "#F5C2E7"  # Pink bold text
 markup_italic_fg = "#F5C2E7"  # Pink italic text
 markup_link_url_fg = "#96CDFB"  # Blue links
 markup_link_text_fg = "#F5C2E7"  # Pink link text
-markup_quote_fg = "#6E6A86"  # Gray quotes
+markup_quote_fg = "#8C88A6"  # Gray quotes (matches comment, cr 4.83)

@@ -45,13 +45,13 @@ virtual_ruler_bg = "#191921"  # Slightly lighter than background, close to comme
 # Syntax highlighting
 match_paren_fg = "#F28FAD"
 match_paren_bg = "#0E0E10"
-comment_fg = "#5E5A76"  # Dark gray comments
+comment_fg = "#8682A0"  # Gray comments (cr 5.44, was 3.05)
 string_fg = "#8FBF8F"  # Muted green strings
 string_special_fg = "#F28FAD"  # Pink special strings
-constant_fg = "#F28FAD"  # Pink constants
-constant_builtin_fg = "#F28FAD"
+constant_fg = "#D7BA7D"  # Gold constants (was pink, collided with keyword/error hue)
+constant_builtin_fg = "#D7BA7D"
 number_fg = "#D8A080"  # Muted peach numbers
-boolean_fg = "#F28FAD"
+boolean_fg = "#D7BA7D"
 function_fg = "#7FAFD7"  # Muted blue functions
 function_builtin_fg = "#7FAFD7"
 keyword_fg = "#F5C2E7"  # Pink keywords
@@ -64,7 +64,7 @@ type_builtin_fg = "#A0A0D0"
 attribute_fg = "#F5C2E7"
 namespace_fg = "#A0A0D0"  # Muted lavender namespaces (Base16 base0E)
 punctuation_fg = "#C0C0CE"
-symbol_fg = "#F28FAD"
+symbol_fg = "#D7BA7D"
 
 # Diagnostics
 error_fg = "#F28FAD"  # Base16 base08 - red errors
@@ -83,4 +83,4 @@ markup_bold_fg = "#F5C2E7"
 markup_italic_fg = "#F5C2E7"
 markup_link_url_fg = "#7FAFD7"
 markup_link_text_fg = "#F5C2E7"
-markup_quote_fg = "#5E5A76"
+markup_quote_fg = "#8682A0"
